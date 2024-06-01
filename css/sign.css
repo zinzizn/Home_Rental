@@ -1,0 +1,137 @@
+
+/* Style for the signup section */
+section {
+text-align: center;
+padding: 50px;
+}
+
+/* Style for the signup form container */
+#signup {
+background-color: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+max-width: 400px;
+margin: 0 auto;
+}
+
+label {
+display: block;
+font-weight: bold;
+font-size: 25px;
+text-align: left; 
+margin-bottom: 5px;
+color: #f55;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+width: 90%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 10px;
+font-size: 18px; /* Adjust font size for input fields */
+}
+input[type="text"]:hover {
+border-color: #3498db;
+}
+input[type="email"]:hover {
+border-color: #3498db;
+}
+input[type="password"]:hover {
+border-color: #3498db;
+}
+/* Style for checkbox labels */
+input[type="checkbox"] {
+margin-top: 10px;
+}
+
+/* Style for the submit button */
+button#sign {
+color: #fff;
+font-size: 16px;
+background-color: #f55;
+border: none;
+padding: 10px 20px;
+box-shadow:  0 3px 4px rgba(0, 0, 0, 0.253);
+border-radius: 5px;
+text-decoration: none;
+transition: background-color 0.3s, color 0.3s;
+}
+#showPassword {
+
+cursor: pointer;
+color: #777777;
+transition: color 0.3s ease;
+font-size: 18px;
+
+}
+
+#showPassword:hover {
+color: #f55;
+}
+button#sign:hover {
+background-color: #fff;
+color: #f55;
+text-shadow:  0 4px 6px rgba(0, 0, 0, 0.411);
+}
+.id{
+    display: flex;
+    
+}
+i{
+    padding: 5px;
+}
+#areafb{
+    width: 98%;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+}
+/* Style for the "Already have an account?" button */
+button a {
+text-decoration: none;
+color: #fff;
+}
+.active{
+ 
+    margin-top: -1%;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 1rem; 
+      background-color: #e74c3c;
+      color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.37);
+    
+  }
+  .active a{
+    text-decoration: none;
+    color: #fff;
+  }
+.create a{
+    text-decoration: none;
+color: #f55;
+}
+button a:hover {
+color: #f55;
+}
+h1{
+color: #f55;
+text-shadow: 0 3px 3px rgba(255, 200, 0, 0.395);
+}
+/* Style for the paragraph below the form */
+p {
+font-size: 14px;
+margin-top: 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 480px) {
+#signup {
+max-width: 100%;
+padding: 15px;
+}
+
+}
+

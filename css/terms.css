@@ -1,0 +1,70 @@
+/* Reset default margins and paddings */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Privacy section styles */
+.privacy-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-heading {
+  font-size: 32px;
+  margin-top: 40px;
+  color: #f55;
+  text-shadow: 0 3px 3px rgba(255, 200, 0, 0.395);
+}
+
+.last-updated {
+  color: #888;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.privacy-quote {
+  border-left: 4px solid #333;
+  padding-left: 10px;
+  margin: 20px 0;
+}
+
+.privacy-description {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.privacy-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1200px) {
+  .privacy-section,.privacy-description {
+      width: 90%;
+      padding: 15px;
+      font-size: 18px;
+  }
+  /* ... Other media queries ... */
+}
+
+.active{
+  margin-top: -1.4%;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-size: 1rem; 
+    background-color: #e74c3c;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.37);
+  
+}
+.active a{
+  text-decoration: none;
+  color: #fff;
+}

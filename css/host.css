@@ -1,0 +1,300 @@
+/* Reset some default styling */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin-left: 20px;
+  }
+/* Style for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Style for section containers */
+.section-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+/* Style for form elements */
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+h2,h3{
+    color: #f55;
+    text-shadow: 0 3px 3px rgba(255, 200, 0, 0.395);
+  }
+
+.active{
+ 
+    margin-top: -2%;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 1rem; 
+      background-color: #e74c3c;
+      color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.37);
+    
+}
+.active a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style for table */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.display {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Style for table title */
+.table-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.table-responsive {
+    overflow-x: auto;
+  }
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+  }
+.table th{
+    background-color: rgba(255, 68, 0, 0.32);
+    color: #fff;
+  }
+  .table td{
+    background-color: rgba(255, 187, 0, 0.13);
+  }
+  .table th,
+  .table td {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #000000;
+    width: 30px;
+  
+  }
+  
+/* Style for buttons */
+#upload {
+    color: #fff;
+  font-size: 20px;
+  background-color: #f55;
+  border: none;
+  padding: 20px 40px;
+  box-shadow:  0 3px 4px rgba(0, 0, 0, 0.253);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+.img input[type="file"] {
+    color: #fff;
+  font-size: 20px;
+  background-color: #fff;
+  border: none;
+  padding: 10px 12px;
+  box-shadow:  0 3px 4px rgba(0, 0, 0, 0.326);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  
+}
+.updateimage{
+ width: 200px;
+ height: 120px;
+    
+}
+.updateimage img{
+    width: 200px;
+    height: 200px;
+       
+   }
+#upload:hover {
+    background-color: #ffffff;
+    color: #f55;
+    box-shadow:  0 4px 6px rgba(0, 0, 0, 0.411);
+    text-emphasis: none;
+}
+option{
+    font-size: 20px;
+}
+
+/* Style for input fields */
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="checkbox"], input[type="file"] {
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 20px;
+    box-shadow:  0 3px 4px rgba(0, 0, 0, 0.253);
+    border-radius: 5px;
+}
+
+/* Style for images */
+.img img {
+    max-width: 100px;
+    max-height: 100px;
+    display: block;
+    margin: 10px auto;
+}
+.imageupload{
+    font-size: 30px;
+    font-weight: bold;
+    color: #f55;
+    text-shadow:  0 3px 4px rgba(239, 203, 2, 0.253);
+}
+/* Additional styling for form elements */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-shadow:  0 3px 4px rgba(0, 0, 0, 0.169);
+}
+span {
+    margin-bottom: 5px;
+    text-shadow:  0 3px 4px rgba(0, 0, 0, 0.169);
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+/* Additional styling for checkboxes */
+.checkbox-group input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.checkbox-group label span {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.checkbox-group label span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.checkbox-group input[type="checkbox"]:checked + span::before {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.checkbox-group input[type="checkbox"]:checked + span::after {
+    content: "\2713";
+    font-size: 14px;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    color: white;
+}
+
+/* Form header styling */
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+/* Form button styling */
+.form-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+/* Adjust button font size */
+.form-button button {
+    font-size: 20px;
+}
+/* Payment notice styling */
+
+.payment-notice input[type="checkbox"] {
+    margin-right: -50px;
+}
+
+/* Form button styling */
+.form-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+/* Adjust button font size */
+.form-button button {
+    font-size: 20px;
+    background-color: #f55;
+    
+}
+
+/* Form button styling */
+.form-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+/* Payment notice styling */
+.payment-notice {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Success message styling */
+.success-message {
+    color: green;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .section-container {
+        width: 90%;
+    }
+}

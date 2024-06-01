@@ -1,0 +1,154 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* List Container Styles */
+.list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  /* This provides space between items */
+}
+
+.hotel {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.244);
+    background-color: #fff;
+}
+
+.hotel-img {
+    width: 100%;
+    margin-bottom: 15px;
+    
+}
+
+.hotel-img img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.hotel-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hotel-info h1,
+.hotel-info p {
+    margin: 10px 0;
+}
+.star-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px; /* provide spacing between stars */
+}
+h1{
+    font-size: 40px;
+    margin-top: 40px;
+    color: #f55;
+    margin-left: 25px;
+    text-shadow: 0 3px 20px rgba(255, 200, 0, 0.395);
+  }
+  h2{
+    font-size: 26px;
+    margin-top: 40px;
+    color: #f55;
+    text-shadow: 0 3px 3px rgba(255, 200, 0, 0.395);
+  }
+
+/* Responsive font sizes */
+@media (min-width: 320px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) {
+    .hotel {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start; /* This will keep the image and info section at the top */
+    }
+
+    .hotel-img,
+    .hotel-info {
+        width: 48%; /* Given a little less than 50% to accommodate any potential paddings or margins */
+        margin: 0;
+    }
+
+    .hotel-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 20px;
+        align-self: flex-end;  /* This will push the button to the bottom */
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 22px;
+    }
+}
+
+/* Button styles */
+#book {
+    background-color: #f55;
+    border-style: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: auto; 
+    box-shadow:  0 3px 8px rgba(0, 0, 0, 0.523);
+}
+
+#book:hover {
+    background-color: rgb(255, 255, 255);
+    
+}
+#book a:hover{
+    text-decoration: none;
+    color: #f55;
+    text-shadow:  0 3px 8px rgba(0, 0, 0, 0.404);
+}
+#book a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}

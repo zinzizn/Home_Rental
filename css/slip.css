@@ -1,0 +1,95 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Form Styles */
+form {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    max-width: 400px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"] {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 18px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.176);
+}
+
+input[type="submit"] {
+    color: #fff;
+    font-size: 20px;
+    background-color: #f55;
+    border: none;
+    padding: 10px 20px;
+    box-shadow:  0 3px 6px rgba(0, 0, 0, 0.297);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+input[type="submit"]:hover {
+    background-color: #fff;
+    color: #f55;
+    box-shadow:  0 4px 6px rgba(0, 0, 0, 0.411);
+    text-shadow:  0 3px 4px rgba(0, 0, 0, 0.498);
+}
+.logo{
+    margin-left: 10%;
+}
+.booksuf{
+    margin-left: 20%;
+    width: 50%;
+    box-shadow:  0 4px 6px rgba(0, 0, 0, 0.411);
+    padding: 10px;
+    background-color: #fff;
+}
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #f55;
+    text-shadow:  0 3px 4px rgba(249, 180, 30, 0.498);
+}
+
+span {
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    form {
+        padding: 10px;
+    }
+
+    input[type="email"]{
+        width: 90%;
+    }
+    input[type="submit"] {
+        width: 30%;
+    }
+}
